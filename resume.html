@@ -5,56 +5,95 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./resume.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <title>Brad Grensewich</title>
 </head>
 <body>
+
   <div id="side-panel">
     <div id="filtered-image">
       <img id="headshot" src="./images/headshot.jpg" alt="Brad Grensewich Headshot">
     </div>
     
-    <div id="contact-container">
-      <div class="side-panel-heading">
+    <div id="contact-container"> 
+      <div class="side-panel-heading"> 
         <h2>CONTACT</h2>
         <hr>
       </div>      
-      <div id="contact-contents">
-        <p>@</p>
-        <p>example@somebody.com</p>
-        <p>&#x1F4F1</p>
-        <p>(212) 123-5555</p>
-        <p>&#127760</p>
-        <p>www.example.com</p>
+      <div id="contact-contents"> 
+        <ul>
+          <li>
+            <div class="icon">
+              <i class="fa fa-envelope" style="font-size:20px;color:white"></i>
+            </div>
+            <div class="data">bradg@somebody.com</div>
+          </li>
+
+          <li>
+            <div class="icon">
+              <i class="fa fa-phone" style="font-size:20px;color:white"></i>
+            </div>
+            <div class="data">(212) 123-5555</div>
+          </li>
+
+          <li>
+            <div class="icon">
+              <i class="fa fa-globe" style="font-size:20px;color:white"></i>
+            </div>
+            <div class="data">www.example.com</div>
+          </li>
+        </ul>
       </div>
-      <div class="with-v">
-        <h3>New York City, NY</h3>
+
+
+      <div class="location">
+        <div class="icon">
+          <i class="fa fa-location-arrow" style="font-size:20px;color:white">
+          </i>
+        </div>
+        <div class="data">
+          <h3>Quebec City, Canada</h3>
+        </div>
       </div>
     </div>
+
     <div id="education-container">
       <div class="side-panel-heading">
         <h2>EDUCATION</h2>
         <hr>
       </div>
-      <div id="education-content">
-        <p>&#127891</p>
-        <div class="school-info">
-          <h3>NAME OF SCHOOL</h3>
-          <p>Degree</p>
-          <p>2001</p>
-        </div>
-        <p>&#127891</p>
-        <div class="school-info">
-          <h3>NAME OF SCHOOL</h3>
-          <p>Degree</p>
-          <p>2001</p>
-        </div>
-        
-      </div>
-      <div class="with-v">
 
+      <div id="education-content">
+        <ul class="education-list">
+          <li>
+            <div class="icon">
+              <i class="fa fa-graduation-cap" style="font-size:20px;color:white"></i>
+            </div>
+            <div class="school-info">
+              <h3>NAME OF SCHOOL</h3>
+              <p>Degree</p>
+              <p>2001</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <i class="fa fa-graduation-cap" style="font-size:20px;color:white"></i>
+            </div>
+            <div class="school-info">
+              <h3>NAME OF SCHOOL</h3>
+              <p>Degree</p>
+              <p>2001</p>
+            </div>
+          </li>
+        </ul>
       </div>
+    
     </div>    
   </div>
+  
   <div id="main-content">
     <h1>BRAD GRENSEWICH</h1>
     <h2>SOFTWARE DEVELOPER</h2>
@@ -87,9 +126,30 @@
       ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
     <h2>SKILLS</h2>
-  </div>
+    
+    <div class="skills">
+      <p>JAVA</p>
+      <div class="skill-bar">
+        <div class="skills java">70%</div>
+      </div>
   
+      <p>PYTHON</p>
+      <div class="skill-bar">
+        <div class="skills python">80%</div>
+      </div>
+ 
+      <p>HTML</p>
+      <div class="skill-bar">
+        <div class="skills html">60%</div>
+      </div>
 
+      <p>C</p>
+      <div class="skill-bar">
+        <div class="skills c">90%</div>
+      </div>
+    
+    </div>
+  </div>
     
 </body>
 </html>

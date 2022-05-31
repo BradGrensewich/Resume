@@ -1,20 +1,25 @@
 body {
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
+    flex-direction: row;
     margin: 0;
-    font-family: "Andale Mono", monospace
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    
 }
 
 #side-panel {
     background: purple;
     color: white;
-
-    display: grid;
-    grid-template-rows: 33% 33% 33%;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: max-content;
 }
 
 #filtered-image {
     background: purple;
+    width: 400px;
+    height: 500px;
 }
 
 #headshot {
@@ -25,27 +30,17 @@ body {
     
 }
 
-#contact-container {
-    display: grid;
-    grid-template-rows: 20% 40% 40%;
+#contact-container, #education-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
-#contact-contents {
-    display: grid;
-    grid-template-columns: 10% 90%;
-    grid-template-rows: 33% 33% 33%;
-}
-
-#education-container {
-    display: grid;
-    grid-template-rows: 15% 50% 35%;
-    justify-content: center;
-}
-
-#education-content {
-    display: grid;
-    grid-template-columns: 15% 85%;    
+#contact-contents, #education-content{
+    display: flex;
+    flex-direction: column;
 }
 
 #main-content {
@@ -56,4 +51,60 @@ div#main-content>h2{
     color:purple;
 }
 
+li {
+    display: flex;
+    gap: 20px;
+}
 
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+hr {
+    color: white;
+}
+
+h2, h3 {
+    font-weight: 500;
+}
+
+.skill-bar {
+    width: 80%;
+    height: 30%;
+    background-color:whitesmoke;
+    border-radius: 5px;
+}
+
+.skills {
+    text-align: right;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-right: 5px;
+}
+
+.java, .python, .html, .c {
+    background-color: rgb(70, 4, 70);
+}
+
+.java{ 
+width: 65%;
+} 
+
+.python {
+width: 75%;
+} 
+
+.html {
+width: 55%;
+} 
+
+.c {
+width: 85%;
+}
