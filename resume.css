@@ -2,11 +2,15 @@ body {
     display: grid;
     grid-template-columns: 30% 70%;
     margin: 0;
+    font-family: "Andale Mono", monospace
 }
 
 #side-panel {
     background: purple;
     color: white;
+
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
 }
 
 #headshot {
@@ -17,6 +21,7 @@ body {
 #contact-container {
     display: grid;
     grid-template-rows: 20% 40% 40%;
+    justify-content: center;
 }
 
 #contact-contents {
@@ -28,15 +33,20 @@ body {
 #education-container {
     display: grid;
     grid-template-rows: 15% 50% 35%;
+    justify-content: center;
 }
 
 #education-content {
     display: grid;
-    grid-template-columns: 5% 95%;
+    grid-template-columns: 15% 85%;    
 }
 
-#side-panel {
-    display: grid;
-    grid-template-rows: 33% 33% 33%;
+#main-content {
+    margin: 15px;
 }
+
+div#main-content>h2{
+    color:purple;
+}
+
 
